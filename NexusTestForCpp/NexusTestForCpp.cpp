@@ -1,7 +1,12 @@
 // NexusTestForCpp.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#include <string>
+#include <fstream>
+#include <sstream>
 #include <iostream>
+
+#include <stdlib.h>
 using namespace std;
 
 int sum(int i, int j)
@@ -44,17 +49,33 @@ void fun()
 	}
 }
 
+string readFileIntoString(const char* filename)
+{
+	ifstream ifile(filename);
+	ostringstream buf;
+	char ch;
+	while (buf && ifile.get(ch))
+		buf.put(ch);
+	return buf.str();
+}
+
 int main()
 {
-	fun();
+	const char* fn1 = "C:\\workspace\\NexusTestForCpp\\x64\\Debug\\table.txt";
+	const char* fn2 = "C:\\workspace\\NexusTestForCpp\\x64\\Debug\\xml";
+	string ht2 = readFileIntoString(fn1);
+	string ht4 = readFileIntoString(fn2);
+	//fun();
+	string ht1 = "<html><body>(Correct formate)hello world!</body><html>";
+	string ht3 = "<html3><body2>(Wrong formate)hello world!nice to meet you!</body1><html2>";
 	int y = 0;
 	double z = 0;
 
-	try {
-		z = division(x, y);
-	}
-	catch (const char* msg) {
-	}
+	//try {
+	//	z = division(x, y);
+	//}
+	//catch (const char* msg) {
+	//}
 
 	return 0;
 }

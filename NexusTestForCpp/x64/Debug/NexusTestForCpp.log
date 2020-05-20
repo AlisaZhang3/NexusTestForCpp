@@ -1,0 +1,3 @@
+﻿  NexusTestForCpp.cpp
+C:\workspace\NexusTestForCpp\NexusTestForCpp\NexusTestForCpp.cpp(31,16): warning C4305: 'initializing': truncation from 'double' to 'float'
+  NexusTestForCpp.vcxproj -> C:\workspace\NexusTestForCpp\x64\Debug\NexusTestForCpp.exe
