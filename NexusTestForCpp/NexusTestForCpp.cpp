@@ -63,8 +63,10 @@ int main()
 {
 	const char* fn1 = "C:\\workspace\\NexusTestForCpp\\x64\\Debug\\table.txt";
 	const char* fn2 = "C:\\workspace\\NexusTestForCpp\\x64\\Debug\\xml";
+	const char* fn3 = "C:\\workspace\\NexusTestForCpp\\data.json";
 	string ht2 = readFileIntoString(fn1);
 	string ht4 = readFileIntoString(fn2);
+	string json1 = readFileIntoString(fn3);
 	//fun();
 	string ht1 = "<html><body>(Correct formate)hello world!</body><html>";
 	string ht3 = "<html3><body2>(Wrong formate)hello world!nice to meet you!</body1><html2>";
